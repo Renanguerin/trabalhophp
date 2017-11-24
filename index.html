@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/style.css" rel="stylesheet">
+    <title>Acesso ao Sistema</title>
+</head>
+<body>
+<img src="imagens/banner_home.jpg" width="100%" height="100px">
+<br/>
+<br/>
+
+    <div class="container">
+    <div class="tituloMenu">CAP - LOJA DE PEÇAS</div>
+        <div class="col-md-4 col-md-offset-4" style="margin-top:3%">
+            <div class="panel panel-primary" align="center" >
+                <div class="panel-heading">Controle de Acesso</div>
+                <div class="panel-body">
+
+                    <!-- Login Form -->
+                    <form role="form" method="POST" action="login.php">
+
+                        <!-- Username Field -->
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <label for="username"><span class="text-danger" style="margin-right:5px;">*</span>Login:</label>
+                                <div class="input-group">
+                                    <input class="form-control" id="username" type="text" name="username" placeholder="Informe o seu username (usuário)..." required/>
+                                    <span class="input-group-btn">
+                                        <label class="btn btn-primary"><span class="glyphicon glyphicon-user" aria-hidden="true"></label>
+                                    </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Content Field -->
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <label for="password"><span class="text-danger" style="margin-right:5px;">*</span>Senha:</label>
+                                <div class="input-group">
+                                    <input class="form-control" id="password" type="password" name="password" placeholder="Insira a sua senha..." required/>
+                                    <span class="input-group-btn">
+                                        <label class="btn btn-primary"><span class="glyphicon glyphicon-lock" aria-hidden="true"></label>
+                                    </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Login Button -->
+                        <div class="row">
+                            <div class="form-group col-xs-4">
+                                <button class="btn btn-primary" type="submit">Entrar</button>
+                            </div>
+                        </div>
+
+                    </form>
+                    <!-- End of Login Form -->
+
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer">Desenvolvido por Renan Guerin</div>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="jquery/jquery.js"></script>    
+</body>
+
+</html>
